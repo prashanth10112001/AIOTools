@@ -1,9 +1,12 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <h1>Welcome to the React App Paisa</h1>
+      <div>
+        <Navbar />
+      </div>
     </>
   );
 }
