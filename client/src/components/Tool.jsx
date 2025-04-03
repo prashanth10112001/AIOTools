@@ -1,18 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Tool.css";
-import pdfMergerImage from "../assets/pdfMerger.JPG";
 
-function Tool({ title, image }) {
+function Tool({ title, image, toolLink }) {
   return (
     <>
-      <div className="tool">
+      <Link to={toolLink} className="tool">
         <div className="toolImage">
           <img src={image} alt="newImage" />
         </div>
         <div className="toolTitle">
           <p>{title}</p>
         </div>
-      </div>
+      </Link>
     </>
   );
 }

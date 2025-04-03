@@ -5,12 +5,12 @@ import pdfMergerImage from "../assets/pdfMerger.JPG";
 
 function Tools() {
   const tools = [
-    { name: "PDF Merger", image: pdfMergerImage },
-    { name: "PDF resize", image: pdfMergerImage },
-    { name: "Docs Merger", image: pdfMergerImage },
-    { name: "Image Compressor", image: pdfMergerImage },
-    { name: "Image Resize", image: pdfMergerImage },
-    { name: "Image Enhancer", image: pdfMergerImage },
+    { name: "PDF Merger", image: pdfMergerImage, toolLink: "toolInterface" },
+    { name: "PDF resize", image: pdfMergerImage, toolLink: "/" },
+    { name: "Docs Merger", image: pdfMergerImage, toolLink: "/" },
+    { name: "Image Compressor", image: pdfMergerImage, toolLink: "/" },
+    { name: "Image Resize", image: pdfMergerImage, toolLink: "/" },
+    { name: "Image Enhancer", image: pdfMergerImage, toolLink: "/" },
   ];
   return (
     <>
@@ -21,7 +21,12 @@ function Tools() {
           </div>
           <div className="items">
             {tools.map((tool, index) => (
-              <Tool key={index} title={tool.name} image={tool.image} />
+              <Tool
+                key={index}
+                title={tool.name}
+                image={tool.image}
+                toolLink={tool.toolLink}
+              />
             ))}
           </div>
         </div>
