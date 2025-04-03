@@ -1,0 +1,37 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .footerRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.footer .footerRow a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.footer .footerRow h4 {
+  display: flex;
+  align-items: start;
+}
+
+.footer .footerRow ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer .footerRow ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
