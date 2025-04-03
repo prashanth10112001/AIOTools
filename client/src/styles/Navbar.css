@@ -2,8 +2,29 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  background-color: black;
+  color: white;
+  font-weight: 550;
+  border-bottom: 2px solid white;
 }
 
 nav ul {
   display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav ul li :hover {
+  color: rgb(125, 186, 239);
 }

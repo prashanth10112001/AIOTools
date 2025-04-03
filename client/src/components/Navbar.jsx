@@ -8,11 +8,21 @@ function Navbar() {
         <nav>
           <div>LoGo</div>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Resources</li>
-            <li>FAQ</li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">About</a>
+            </li>
+            <li>
+              <a href="/">Services</a>
+            </li>
+            <li>
+              <a href="/">Resources</a>
+            </li>
+            <li>
+              <a href="/">FAQ</a>
+            </li>
           </ul>
         </nav>
       </div>
