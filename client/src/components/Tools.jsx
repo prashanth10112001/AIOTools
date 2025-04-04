@@ -5,7 +5,7 @@ import pdfMergerImage from "../assets/pdfMerger.JPG";
 
 function Tools() {
   const tools = [
-    { name: "PDF Merger", image: pdfMergerImage, toolLink: "toolInterface" },
+    { name: "PDF Merger", image: pdfMergerImage, toolLink: "pdfMerger" },
     { name: "PDF resize", image: pdfMergerImage, toolLink: "/" },
     { name: "Docs Merger", image: pdfMergerImage, toolLink: "/" },
     { name: "Image Compressor", image: pdfMergerImage, toolLink: "/" },

@@ -1,11 +1,10 @@
 // client/src/components/ToolInterface.jsx
 import React, { useState, useEffect } from "react";
-import { PDFDocument } from "pdf-lib";
 import { saveAs } from "file-saver";
 import axios from "axios";
 import "../styles/PdfMerger.css";
 
-function ToolInterface() {
+function PdfMergerTool() {
   const [fileNames, setFileNames] = useState("No files chosen");
   const [pdfFiles, setPdfFiles] = useState([]);
 
@@ -95,4 +94,4 @@ function ToolInterface() {
   );
 }
 
-export default ToolInterface;
+export default PdfMergerTool;

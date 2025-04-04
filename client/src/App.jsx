@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Tools from "./components/Tools";
-import ToolInterface from "./components/ToolInterface";
+import PdfMerger from "./components/PdfMergerTool";
 import Footer from "./components/Footer";
 
 import "./App.css";
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Tools />} />
-        <Route path="/toolInterface" element={<ToolInterface />} />
+        <Route path="/pdfMerger" element={<PdfMerger />} />
       </Routes>
       <Footer />
     </Router>
