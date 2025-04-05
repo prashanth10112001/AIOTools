@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export async function mergePdfs(req, res) {
   try {
-    if (!req.files || req.files.length < 2) {
+    if (!Array.isArray(req.files) || req.files.length < 2) {
       return res.status(400).send("Please provide at least two PDF files.");
     }
 
